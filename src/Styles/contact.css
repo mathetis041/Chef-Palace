@@ -1,0 +1,74 @@
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-section .contact-container {
+  padding: 40px 5px;
+}
+
+.contact-section .contact-container .section-topic {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.contact-section .contact-container .text-content-header {
+  text-align: center;
+}
+
+.contact-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .contact-form input, .contact-container .contact-form textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 1024px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.contact-container .contact-form input:focus, .contact-container .contact-form textarea:focus {
+  border-bottom: 2px solid rgb(205, 133, 63);
+  /* border-bottom: 2px solid rgb(238, 193, 149); */
+  transition: all 1s ease;
+}
+
+#message {
+  height: 150px;
+  overflow: visible;
+}
+
+.form-btn {
+  margin: 15px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 133, 63);
+  background-color: rgb(205, 133, 63);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.4s ease-in;
+}
+
+.form-btn:hover {
+  background-color: transparent;
+  color: rgb(205, 133, 63);
+}
+
+.pop-modal {
+  padding: 1rem;
+  width: 300px;
+  font-size: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 20px 30px 0px rgba(153, 153, 153, 0.3);
+  position: fixed;
+  top: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}

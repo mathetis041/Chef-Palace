@@ -1,0 +1,139 @@
+form.hero-search {
+  position: absolute;
+}
+
+.hero-search input {
+  position: relative;
+  padding: 12px 40px;
+  border-radius: 50px;
+  outline: none;
+  z-index: 10;
+  width: calc(100vw - 25px);
+  max-width: 1000px;
+  border: none;
+}
+
+.bg-over {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 1000vw;
+  height: 1000vh;
+  background: rgba(0,0,0,0.6);
+}
+
+.searching .bg-over {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.searching .search-list, .searching input {
+  width: calc(100vw - 25px);
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1001;
+}
+
+.searching input {
+  transform: translate(-50%, -50px);
+}
+
+.form-search-submit {
+  display: inline;
+  position: absolute;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  color: #000;
+  top: 8px;
+  right: 30px;
+  z-index: 10;
+}
+
+.searching .form-search-submit {
+  display: none;
+}
+
+.search-list {
+  background-color: #fff;
+  position: absolute;
+  width: calc(100vw - 25px);
+  max-width: 1000px;
+  max-height: 500px;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0px 10px 10px;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.search-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.search-list a {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 0.2px solid rgba(0,0,0,0.2);
+}
+
+.search-list a:hover, .search-list a:active {
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+input.border {
+  animation: border 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes border {
+  0% {
+    border-radius: 25px 0 10px 0;
+  }
+  50% {
+    border-radius: 25px 12.5px 12.5px 0;
+  }
+  100% {
+    border-radius: 25px 25px 0 0;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .hero-search input, .searching .search-list, .searching input {
+    width: calc(100vw - 150px);
+  }
+  
+  .search-list {
+    width: calc(100vw - 150px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-search input, .searching .search-list, .searching input {
+    width: calc(100vw - 200px);
+  }
+  
+  .search-list {
+    width: calc(100vw - 200px);
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  input, .searching .search-list, .searching input {
+    width: calc(90vw - 300px);
+  }
+
+  .search-list {
+    width: 100%;
+  }
+}
