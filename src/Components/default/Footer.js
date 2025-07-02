@@ -1,7 +1,15 @@
-import * as BsIcons from "react-icons/bs";
-import * as GiIcons from "react-icons/gi";
 import { Container, Nav } from "react-bootstrap";
+import { GiKnifeFork } from "react-icons/gi";
 import { Link } from "react-router-dom";
+
+import {
+  BsArrow90DegUp,
+  BsWhatsapp,
+  BsLinkedin,
+  BsEnvelope,
+  BsFileEarmarkText,
+  BsGlobe2,
+} from "react-icons/bs";
 
 import {
   FooterContainer,
@@ -19,63 +27,79 @@ function Footer() {
     <FooterContainer>
       <Container>
         <GoTop onClick={ScrollToTop}>
-          <BsIcons.BsArrow90DegUp />
+          <BsArrow90DegUp />
         </GoTop>
         <FooterFlex>
           <div>
             <FooterShare>
+              {/* Portfolio */}
               <a
-                href="https://www.instagram.com/the_dev.io/"
+                href="https://matthew-vincent.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+                title="Portfolio"
+              >
+                <BsGlobe2 size="1.4rem" />
+              </a>
+
+              {/* Resume */}
+              <a
+                href="/Matthew_Vincent_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                title="Resume"
+              >
+                <BsFileEarmarkText size="1.4rem" />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/2349030710941?text=Hi%20Matthew%2C%20I%20saw%20your%20portfolio%20and%20I’m%20interested%20in%20working%20with%20you!"
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsIcons.BsInstagram size="1.4rem" />
+                <BsWhatsapp size="1.4rem" />
               </a>
-              <a href="paol">
-                <BsIcons.BsFacebook size="1.4rem" />
-              </a>
-              <a
-                href="https://wa.me/2349065766363?text=I%20want%20inquire%20your%20web%20developing%20services"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsIcons.BsWhatsapp size="1.4rem" />
-              </a>
+
+
+              {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/matthew-vincent-frontend-developer"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn"
               >
-                <BsIcons.BsLinkedin size="1.4rem" />
+                <BsLinkedin size="1.4rem" />
               </a>
+
+              {/* Email */}
               <a
-                href="https://twitter.com/Michaelajayi150"
+                href="mailto:matthewonuoha41@gmail.com"
                 target="_blank"
                 rel="noreferrer"
+                title="Email"
               >
-                <BsIcons.BsTwitter size="1.4rem" />
+                <BsEnvelope size="1.4rem" />
               </a>
             </FooterShare>
+
             <Nav className="me-2">
-              <Link to={{ pathname: "/category" }}>All Categories</Link>
-              <Link to={{ pathname: "/" }}>About Us</Link>
-              <Link to={{ pathname: "/blog" }}>Blog</Link>
+              <Link to="/category">All Categories</Link>
+              <Link to="/">About Us</Link>
+              <Link to="/blog">Blog</Link>
             </Nav>
           </div>
 
           <div>
             <Link to="/">
               <h1>
-                {/* <SiIcons.SiChef size="3rem" /> */}
                 CHEF P
-                <GiIcons.GiKnifeFork
-                  style={{ transform: "translateY(2.5px)" }}
-                />
+                <GiKnifeFork style={{ transform: "translateY(2.5px)" }} />
                 LACE
               </h1>
             </Link>
             <div className="copyright">
-              &copy; 2022 CHEF PALACE <br />
+              &copy; {new Date().getFullYear()} CHEF PALACE <br />
               All rights reserved.
             </div>
           </div>

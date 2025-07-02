@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
-import { useForm, ValidationError } from "@formspree/react";
-import { motion } from "framer-motion";
-// import axios from "axios";
 import "../../Styles/contact.css";
+import React, { useEffect, useState } from "react";
+import { ValidationError, useForm } from "@formspree/react";
+import { motion } from "framer-motion";
+import { Container } from "react-bootstrap";
+
+// import axios from "axios";
 
 function Contact() {
   const [Form, setForm] = useState({
@@ -13,7 +14,7 @@ function Contact() {
     message: "",
   });
   const [Status, setStatus] = useState(false);
-  const [state, handleSubmit] = useForm("xknykedo");
+  const [state, handleSubmit] = useForm("xjkrzyrr");
 
   const PopModal = {
     offscreen: {
