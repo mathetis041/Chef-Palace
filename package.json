@@ -1,8 +1,8 @@
 {
-  "homepage": "/Chef-Palace",
   "name": "chef-palace",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/Chef-Palace",
   "dependencies": {
     "@formspree/react": "^2.2.5",
     "@splidejs/react-splide": "^0.7.5",
