@@ -1,0 +1,9 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/Chef-Palace/*"
+  to = "/Chef-Palace/index.html"
+  status = 200

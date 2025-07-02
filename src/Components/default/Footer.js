@@ -1,7 +1,8 @@
-import { Container, Nav } from "react-bootstrap";
 import * as BsIcons from "react-icons/bs";
 import * as GiIcons from "react-icons/gi";
+import { Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 import {
   FooterContainer,
   FooterFlex,
@@ -41,7 +42,7 @@ function Footer() {
                 <BsIcons.BsWhatsapp size="1.4rem" />
               </a>
               <a
-                href="https://www.linkedin.com/in/ajayi-michael-692bb6203/"
+                href="https://www.linkedin.com/in/matthew-vincent-frontend-developer"
                 target="_blank"
                 rel="noreferrer"
               >
